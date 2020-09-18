@@ -1,0 +1,17 @@
+-tạo dự án trên console.firebase.google.com
+	lưu trữ project trên Firebase
+-nội dung project
+	demp app
+	set up React-app using create-react-app
+	set up Firebase	
+	set up React Router
+		npm install react-router-dom
+	Build the nav bar(header)
+	Build the Banner
+	Build the Prouct component
+	Introduce React Context API
+	Setup Add to Basket Button
+	Build Checkout page
+	Build Subtotal Component
+	Build Login Page
+	Deploy the App LIVE on Firebase

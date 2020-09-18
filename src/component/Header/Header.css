@@ -1,0 +1,172 @@
+nav{
+    height: 80px;
+    background: #2c3e50;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav img{
+    width: 70px;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:  0 15px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 1118px){
+    nav img{
+        left: 8%;
+    }
+}
+@media (max-width: 944px){
+    nav img{
+        left: 40px;
+        top: 5px;
+        width: 70px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 860px){
+    nav{
+        width: 100%;
+    }
+   label #btn{
+       display: block;
+   }
+   ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #34495e;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+   }
+   nav ul li{
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+   }
+   nav ul li a{
+       font-size: 25px;
+   }
+   #check:checked ~ ul {
+       left: 0;
+   }
+   #check:checked ~ label #btn{
+       display: none;
+   }
+   #check:checked ~ label #cancel{
+       display: block;
+   }
+
+}
+.header{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header_logo{
+    width: 100px;
+    object-fit: contain;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 18px;
+}
+.header__search{
+    display: flex;
+    flex: 1;
+}
+.header__searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header__searchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__link{
+    color: white;
+    text-decoration: none;
+}
+.header__option{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+}
+.header__optionLineOne{
+    font-size: 10px;
+}
+.header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+
+}
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+
+}
+.header__optionCount{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
