@@ -1,12 +1,12 @@
 import React from 'react';
 import './HomePage.css';
 import Product from '../Product/Product';
+import SlideShow from '../SlideshowHomePage/SlideShow';
 
 function HomePage() {
     return (
         <div className="home">
-
-               
+                <SlideShow></SlideShow>
                 <img className="home__image" src="https://www.tigo.com.hn/sites/tigowebcorp.hn/files/amazon-prime-banner-junio2020.png" alt="" />
                
                

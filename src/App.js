@@ -8,7 +8,7 @@ import {
 import Header from './component/Header/Header';
 import HomePage from './component/HomePage/HomePage';
 import CheckOut from './component/CheckOut/CheckOut';
-import SlideShow from './component/SlideshowHomePage/SlideShow'
+
 
 
 function App() {
@@ -27,7 +27,6 @@ function App() {
             {/*this is the default router*/}
             <Route path="/">
                 <Header></Header>
-                <SlideShow></SlideShow>
                 <HomePage></HomePage>
             </Route>
           </Switch>
